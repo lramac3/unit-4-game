@@ -1,15 +1,15 @@
 $(document).ready(function () {
-  // Select a random number between 24 and 125 that stars to display at the beginning
-  var randomNum = Math.floor(Math.random() * 50) + 12
+  // Select a random number between 19 and 120 that stars to display at the beginning
+  var randomNum = Math.floor(Math.random() * 102) + 19
 
   // Append random number to the randonNumber id in html
   $('#randomNumber').text(randomNum)
 
   // Set up randum number for each crystal. This number is between 1 and 12.
-  var num1 = Math.floor(Math.random() * 19) + 1
-  var num2 = Math.floor(Math.random() * 19) + 1
-  var num3 = Math.floor(Math.random() * 19) + 1
-  var num4 = Math.floor(Math.random() * 19) + 1
+  var num1 = Math.floor(Math.random() * 12) + 1
+  var num2 = Math.floor(Math.random() * 12) + 1
+  var num3 = Math.floor(Math.random() * 12) + 1
+  var num4 = Math.floor(Math.random() * 12) + 1
 
   // Create variable to track user's result
   var userScore = 0
@@ -22,13 +22,13 @@ $(document).ready(function () {
 
   // Reset this game
   function reset () {
-    randomNum = Math.floor(Math.random() * 50) + 12
+    randomNum = Math.floor(Math.random() * 102) + 19
     $('#randomNumber').text(randomNum)
 
-    num1 = Math.floor(Math.random() * 19) + 1
-    num2 = Math.floor(Math.random() * 19) + 1
-    num3 = Math.floor(Math.random() * 19) + 1
-    num4 = Math.floor(Math.random() * 19) + 1
+    num1 = Math.floor(Math.random() * 12) + 1
+    num2 = Math.floor(Math.random() * 12) + 1
+    num3 = Math.floor(Math.random() * 12) + 1
+    num4 = Math.floor(Math.random() * 12) + 1
     userScore = 0
     $('#finalTotalScore').text(userScore)
   }
@@ -51,7 +51,7 @@ $(document).ready(function () {
 
   // Set up click function on crystal
 
-  // click on blue scrytal
+  // click on blue crystal
   $('#blueCrystal').on('click', function () {
     userScore = userScore + num1
     $('#finalTotalScore').text(userScore)
