@@ -1,6 +1,6 @@
 # Crystals Collector!
 
-# Instruction
+# Instructions
 
 Here's how the app works:
 
